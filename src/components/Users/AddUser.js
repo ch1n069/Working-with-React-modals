@@ -2,6 +2,10 @@ import React from "react";
 // import classes "./AddUser.module.css"
 
 // all imports happen above
+
+const addUserHandler = (e) => {
+  e.preventDefault();
+};
 const AddUser = () => {
   return (
     <form action="" onSubmit="addUserHandler">
