@@ -6,11 +6,17 @@ import classes from "./AddUser.module.css";
 
 // all imports happen above
 
-const addUserHandler = (e) => {
-  e.preventDefault();
-  //   prevent default form behaviour
-};
 const AddUser = () => {
+  const [enteredUsername, setEnteredUsername] = useState("");
+
+  // custom functions
+  const addUserHandler = (e) => {
+    e.preventDefault();
+    //   prevent default form behaviour
+  };
+
+  const usernameChangedHandler = (e) => {};
+
   return (
     <Card className={classes.input}>
       <form action="" onSubmit={addUserHandler}>
