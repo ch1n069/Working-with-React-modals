@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
+import classes from "./AddUser.module.css";
 // import classes "./AddUser.module.css"
 
 // all imports happen above
@@ -10,7 +11,7 @@ const addUserHandler = (e) => {
 };
 const AddUser = () => {
   return (
-    <Card>
+    <Card className={classes.input}>
       <form action="" onSubmit="addUserHandler ">
         <label htmlFor="username">Enter your Name</label>
         <input id="username" type="text" name="" />
