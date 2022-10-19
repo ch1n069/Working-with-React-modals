@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "../UI/Card";
+import classes from "./UserList.module.css";
 
 const Userslist = (props) => {
   return (
-    <Card>
+    <Card className={classes.users}>
       <ul>
         {props.users.map((user) => (
           <li>
