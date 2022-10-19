@@ -8,6 +8,7 @@ import classes from "./AddUser.module.css";
 
 const AddUser = () => {
   const [enteredUsername, setEnteredUsername] = useState("");
+  const [enteredAge, setEnteredAge] = useState("");
 
   // custom functions
   const addUserHandler = (e) => {
@@ -19,6 +20,8 @@ const AddUser = () => {
     setEnteredUsername(e.target.value);
     console.log(e.target.value);
   };
+
+  const ageChangedHandler = (e) => {};
 
   return (
     <Card className={classes.input}>
