@@ -15,6 +15,8 @@ const AddUser = () => {
     e.preventDefault();
     //   prevent default form behaviour
     console.log(enteredUsername, enteredAge);
+    setEnteredUsername("");
+    setEnteredAge("");
   };
 
   const usernameChangedHandler = (e) => {
@@ -31,13 +33,14 @@ const AddUser = () => {
       <form action="" onSubmit={addUserHandler}>
         <label htmlFor="username">Enter your Name</label>
         <input
+          value={enteredUsername}
           id="username"
           type="text"
           name=""
           onChange={usernameChangedHandler}
         />
         <label>Enter your age</label>
-        <input type="number" onChange={ageChangedHandler} />
+        <input type="number" onChange={ageChangedHandler} value={enteredAge} />
         <Button type="submit">Add user</Button>
       </form>
     </Card>
