@@ -12,7 +12,7 @@ const addUserHandler = (e) => {
 const AddUser = () => {
   return (
     <Card className={classes.input}>
-      <form action="" onSubmit="addUserHandler ">
+      <form action="" onSubmit={addUserHandler}>
         <label htmlFor="username">Enter your Name</label>
         <input id="username" type="text" name="" />
         <label htmlFor="age">Enter your age</label>
