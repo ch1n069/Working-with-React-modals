@@ -5,10 +5,11 @@ import React from "react";
 
 const addUserHandler = (e) => {
   e.preventDefault();
+  //   prevent default form behaviour
 };
 const AddUser = () => {
   return (
-    <form action="" onSubmit="addUserHandler">
+    <form action="" onSubmit="addUserHandler ">
       <label htmlFor="username">Enter your Name</label>
       <input id="username" type="text" name="" />
       <label htmlFor="age">Enter your age</label>
