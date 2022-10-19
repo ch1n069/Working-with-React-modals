@@ -13,6 +13,12 @@ const AddUser = () => {
   // custom functions
   const addUserHandler = (e) => {
     e.preventDefault();
+    if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+    if (+enteredAge < 1) {
+      return;
+    }
     //   prevent default form behaviour
     console.log(enteredUsername, enteredAge);
     setEnteredUsername("");
